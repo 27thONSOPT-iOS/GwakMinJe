@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Music InfoVC-->
+        <scene sceneID="g8f-WJ-0OU">
+            <objects>
+                <viewController storyboardIdentifier="MusicInfoVC" id="uvi-N9-CbR" customClass="MusicInfoVC" customModule="SOPTSeminar3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ii8-13-jdH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PlJ-Ug-xmn">
+                                <rect key="frame" x="87" y="265" width="240" height="185"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="185" id="MYr-aA-urg"/>
+                                    <constraint firstAttribute="width" constant="240" id="pyE-XA-H3H"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vmj-e5-Q63">
+                                <rect key="frame" x="186" y="144" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="968-RW-NYw">
+                                <rect key="frame" x="186" y="550" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="2RK-wc-K9S"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Vmj-e5-Q63" firstAttribute="centerX" secondItem="Ii8-13-jdH" secondAttribute="centerX" id="0Ts-To-hYe"/>
+                            <constraint firstItem="Vmj-e5-Q63" firstAttribute="top" secondItem="2RK-wc-K9S" secondAttribute="top" constant="100" id="5eK-Mb-dq5"/>
+                            <constraint firstItem="PlJ-Ug-xmn" firstAttribute="centerX" secondItem="Ii8-13-jdH" secondAttribute="centerX" id="PeK-CD-b00"/>
+                            <constraint firstItem="968-RW-NYw" firstAttribute="top" secondItem="PlJ-Ug-xmn" secondAttribute="bottom" constant="100" id="Rqi-mm-PqY"/>
+                            <constraint firstItem="PlJ-Ug-xmn" firstAttribute="top" secondItem="Vmj-e5-Q63" secondAttribute="bottom" constant="100" id="u8b-H7-vI1"/>
+                            <constraint firstItem="968-RW-NYw" firstAttribute="centerX" secondItem="Ii8-13-jdH" secondAttribute="centerX" id="z78-XF-rC7"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="PlJ-Ug-xmn" id="EY5-rD-LM6"/>
+                        <outlet property="singerLabel" destination="968-RW-NYw" id="81d-Nr-wLK"/>
+                        <outlet property="titleLabel" destination="Vmj-e5-Q63" id="R2O-yD-Ooc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CyE-ye-RPE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="100.00000000000001" y="-194.19642857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
