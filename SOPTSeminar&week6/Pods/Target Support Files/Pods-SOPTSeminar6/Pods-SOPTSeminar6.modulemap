@@ -1,0 +1,6 @@
+framework module Pods_SOPTSeminar6 {
+  umbrella header "Pods-SOPTSeminar6-umbrella.h"
+
+  export *
+  module * { export * }
+}
